@@ -1,4 +1,5 @@
-
+let playerResult = 0;
+let computerResult = 0;
 
 function playGame(playerInput) {
     clearMessages();
@@ -21,22 +22,22 @@ function playGame(playerInput) {
             printMessage('Remis!');
         } else if (argComputerMove = 'kamień' && argPlayerMove == 'papier' || argComputerMove == 'papier' && argPlayerMove == 'nożyce' || argComputerMove == 'nożyce' && argPlayerMove == 'kamień') {
             printMessage('Ty wygrywasz!');
+            playerResult++;
+            document.getElementById('player-score').innerHTML = playerResult;
         } else if (argPlayerMove !== 'kamień' && argPlayerMove !== 'papier' && argPlayerMove !== 'nożyce') {
             printMessage('Niepoprawny ruch! Spróbuj jeszcze raz.');
         } else {
             printMessage('Przegrywasz!');
+            computerResult++;
+            document.getElementById('computer-score').innerHTML = computerResult;
         }
     }
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-    console.log(`Wylosowana liczba to ${randomNumber}`);
-
     let computerMove = getMoveName(randomNumber);
 
     printMessage(`Mój ruch to ${computerMove}.`);
-
-    console.log(`Gracz wpisał ${playerInput}.`);
 
     let playerMove = getMoveName(playerInput);
 

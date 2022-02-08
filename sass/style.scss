@@ -57,3 +57,15 @@ button {
     color: #2f3640;
     padding-bottom: 40px;
 }
+
+#result {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 30px;
+    color: #353b48;
+}
+
+.player-computer {
+    padding: 0 15px;
+}
