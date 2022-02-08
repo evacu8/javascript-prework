@@ -1,0 +1,51 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #40739e;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+
+button {
+  width: 120px;
+  height: 120px;
+  font-size: 20px;
+  font-style: bold;
+  color: #2f3640;
+  border-radius: 50%;
+  border: none;
+}
+button:hover {
+  transform: scale(1.05);
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#play-rock:hover {
+  background-image: url("/images/rock.png");
+}
+
+#play-paper:hover {
+  background-image: url("/images/paper.png");
+}
+
+#play-scissors:hover {
+  background-image: url("/images/scissors.png");
+}
+
+#messages {
+  font-size: 22px;
+  margin-left: 50px;
+  color: #2f3640;
+  padding-bottom: 40px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDQTtFQUNJLGdCQUFBO0VBQ0EsY0FBQTtFQUNBLHlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxzSEFBQTtBQ0FKOztBREdBO0VBQ0ksYUFBQTtFQUNBLGVBQUE7RUFDQSw2QkFBQTtFQUNBLGVBQUE7QUNBSjs7QURHQTtFQUNJLFlBQUE7RUFDQSxhQUFBO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQ0FKO0FEQ0k7RUFDSSxzQkFBQTtFQUlBLFlBQUE7RUFDQSw0QkFBQTtFQUNBLHNCQUFBO0FDRlI7O0FET0k7RUFDSSx5Q0FBQTtBQ0pSOztBRFNJO0VBQ0ksMENBQUE7QUNOUjs7QURXSTtFQUNJLDZDQUFBO0FDUlI7O0FEWUE7RUFDSSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxjQUFBO0VBQ0Esb0JBQUE7QUNUSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

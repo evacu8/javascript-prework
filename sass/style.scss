@@ -1,0 +1,59 @@
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #40739e;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+button {
+    width: 120px;
+    height: 120px;
+    font-size: 20px;
+    font-style: bold;
+    color: #2f3640;
+    border-radius: 50%;
+    border: none;
+    &:hover {
+        transform: scale(1.05);
+        // font-style: bold;
+        // color: #192a56;
+        // font-weight: 600;
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#play-rock {
+    &:hover {
+        background-image: url('/images/rock.png');
+    }
+}
+
+#play-paper {
+    &:hover {
+        background-image: url('/images/paper.png');
+    }
+}
+
+#play-scissors {
+    &:hover {
+        background-image: url('/images/scissors.png');
+    }
+}
+
+#messages {
+    font-size: 22px;
+    margin-left: 50px;
+    color: #2f3640;
+    padding-bottom: 40px;
+}
